@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당근 메인페이지 클론코딩</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <div class="header__logo-wrapper">
+        <a href="#">
+          <img
+            src="https://i.namu.wiki/i/4kTJGvpYAXvbT44b-ePbMSkdNuwLCFEUCwWPrIcEYX1LFnemJhrYl9LZd8wWriY-ADdCS3QhPlHNsrlnnWSSfQ.svg"
+            alt="당근로고" />
+        </a>
+      </div>
+      <div class="header__app-button">
+        <button>앱 다운로드</button>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="main">
+      <div class="main__container">
+        <!-- 위치 및 타이틀 영역 -->
+        <section class="main__headline">
+          <h1 class="headline__title">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span class="headline__location">서초동</span>에서
+            <span class="headline__highlight">러닝모임</span> 찾고 계신가요?
+          </h1>
+        </section>
+
+        <!-- 검색창 영역 -->
+        <section class="main__search-area">
+          <article class="search-area__location-select">
+            <button class="search-area__location-button">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>서초동</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </article>
+          <article class="search-area__input">
+            <input type="text" id="searchInput" />
+          </article>
+        </section>
+
+        <!-- 카테고리 버튼 영역 -->
+        <section class="main__categories">
+          <div class="categories__list">
+            <!-- 아이템 반복 -->
+            <div class="category-card">
+              <i class="category-card__icon"></i>
+              <span class="category-card__label">중고거래</span>
+            </div>
+            <!-- ... -->
+          </div>
+        </section>
+
+        <!-- 지역 배지 리스트 -->
+        <section class="main__local-tags">
+          <span class="local-tag">송도동</span>
+          <span class="local-tag">역삼동</span>
+        </section>
+      </div>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer class="footer">
+      <!-- 상단: 로고 및 링크 영역 -->
+      <section class="footer__top">
+        <!-- 로고, sns 링크 -->
+        <div class="footer__brand">
+          <img
+            src="https://i.namu.wiki/i/4kTJGvpYAXvbT44b-ePbMSkdNuwLCFEUCwWPrIcEYX1LFnemJhrYl9LZd8wWriY-ADdCS3QhPlHNsrlnnWSSfQ.svg"
+            alt="당근로고" />
+          <div class="footer__sns__badge">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+        <!-- 링크 -->
+        <div class="footer__links">
+          <div class="footer__link-group">
+            <h3 class="footer__heading">회사</h3>
+            <ul>
+              <li>회사 소개</li>
+            </ul>
+          </div>
+          <div class="footer__link-group">
+            <h3 class="footer__heading">탐색</h3>
+            <ul>
+              <li>중고거래</li>
+            </ul>
+          </div>
+          <div class="footer__link-group">
+            <h3 class="footer__heading">비즈니스</h3>
+            <ul>
+              <li>당근 비즈니스</li>
+            </ul>
+          </div>
+          <div class="footer__link-group">
+            <h3 class="footer__heading">Karrot</h3>
+            <ul>
+              <li>
+                <a href="https://karrotmarket.com/ca/?in=toronto-11052">
+                  Canada <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__link-group">
+            <h3 class="footer__heading">문의</h3>
+            <ul>
+              <li>IR</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 하단: 저작권 및 약관 -->
+      <section class="footer__bottom">
+        <div class="footer__copyright">(주) 당근마켓 클론코딩</div>
+        <div class="footer__policies">
+          <ul>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>운영정책</li>
+            <li>위치기반서비스</li>
+            <li>이용약관</li>
+            <li>이용자보호 비전과 계획</li>
+            <li>청소년보호정책</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
