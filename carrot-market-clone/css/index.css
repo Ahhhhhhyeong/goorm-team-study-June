@@ -1,84 +1,112 @@
+:root {
+  --dark-btn-bg-color: #2a3038;
+  --carrot-color: #f35816;
+  --carrot-hover-color: #ff9364;
+  --solid-color-light-color: #ddd;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2a3038;
   line-height: 1.5rem;
-}
 
-/* 헤더 영역 */
-.header {
-  display: flex;
-  padding: 0.3rem 2rem;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  border-bottom: 1px solid #ddd;
-}
-
-.header__logo-wrapper {
-  width: 72px;
-  height: 58px;
-  margin-right: 2rem;
-}
-.header img {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.header__app-button button {
-  padding: 0.5rem 0.8rem;
-  background-color: #f35816;
-  border: none;
-  border-radius: 0.3rem;
-  color: white;
-  font-size: 0.8rem;
-}
-.header__app-button button:hover {
-  background-color: #ff9364;
-}
-
-/* main 영역 */
-.main {
-  display: block;
-  width: 100%;
-}
-
-/* footer 영역 */
-.footer {
   max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  margin-inline: auto;
-  padding: 4rem;
-
-  border-top: 1px solid #ddd;
 }
 
-.footer__top {
+.main {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  /* border: 1px solid gray; */
+}
+
+.main__container {
+  /* max-width: 1400px; */
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05); /* 보기 쉽게 배경색 */
+}
+
+/* main header section */
+.main__headline {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.headline__highlight {
+  transition: opacity 0.5s ease;
+  display: inline-block; /* transition 적용 위해 필요 */
+}
+.headline__highlight.hidden {
+  opacity: 0;
+}
+
+/* main header Input area */
+.main__search-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* main header Input area - 지역 버튼 부분 */
+
+.search-area__location-button {
+  margin-right: 0.2rem;
+  /* padding: 0.6rem 0.8rem; */
+  padding: 0.8rem 0.3rem;
+  border-radius: 2rem;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  background-color: var(--dark-btn-bg-color);
+}
+
+/* main header Input area - 검색창 부분 */
+.search-input__wrapper {
+  width: 100%;
+  /* padding: 0.3rem 15rem 0.35rem 1rem; */
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--solid-color-light-color);
   box-sizing: border-box;
+  background-color: white;
 }
 
-.footer__brand {
-  flex: 1;
-  flex-direction: column;
+.search-input__wrapper select {
+  border: none;
+  background-color: white;
 }
 
-.footer__brand img {
-  width: 52px;
+.search-input__wrapper input {
+  border: none;
+  border-left: 1px solid var(--solid-color-light-color);
+  padding: 0.3rem 17rem 0.3rem 0.3rem;
 }
 
-.footer__links {
+.search-input__button {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  background-color: var(--dark-btn-bg-color);
+  color: white;
+  border-radius: 50%;
+}
+
+/* main header Input area - 인기 검색어 */
+.search-area__hot-topic {
   display: flex;
 }
-.footer__link-group ul {
-  list-style: none;
-}
 
-.footer__policies ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
+.search-area__hot-topic p,
+span {
+  margin: 0;
+  padding: 0;
 }
