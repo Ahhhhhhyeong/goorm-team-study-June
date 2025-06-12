@@ -1,8 +1,20 @@
 :root {
-  --dark-btn-bg-color: #2a3038;
   --carrot-color: #f35816;
-  --carrot-hover-color: #ff9364;
   --solid-color-light-color: #ddd;
+  /* button color */
+  --dark-btn-bg-color: #2a3038;
+
+  /* font color */
+  --font-light-gray: #969aa2;
+  --font-primary-gray: #666e7d;
+  --font-dark: #2a3038;
+  /* icon color */
+  --carrot-icon-blue: #328eff;
+  --carrot-icon-pink: #d95bc4;
+  --carrot-icon-yello: #ffae0b;
+  --carrot-badge-lightgray: #f3f4f5;
+  /* hover color */
+  --carrot-hover-color: #ff9364;
 }
 
 body {
@@ -17,9 +29,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 100vh;
-
+  margin: 0 auto;
   /* border: 1px solid gray; */
 }
 
@@ -28,7 +40,7 @@ body {
   width: 100%;
   padding: 1rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.05); /* 보기 쉽게 배경색 */
+  /* background-color: rgba(0, 0, 0, 0.05); 보기 쉽게 배경색 */
 }
 
 /* main header section */
@@ -103,10 +115,53 @@ body {
 /* main header Input area - 인기 검색어 */
 .search-area__hot-topic {
   display: flex;
+  width: 100%;
 }
 
 .search-area__hot-topic p,
 span {
   margin: 0;
   padding: 0;
+}
+
+.search-area__hot-topic p {
+  color: var(--font-light-gray);
+  margin: 0.6rem;
+}
+.search-area__hot-topic span {
+  margin: 0.6rem;
+  color: var(--font-primary-gray);
+}
+
+/* main__categories 영역 */
+.main__categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card {
+  width: 8rem;
+  height: 7rem;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  background-color: var(--carrot-badge-lightgray);
+}
+
+/* 지역 배지 리스트 */
+.main__local-tags {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+
+.local-tag {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--carrot-badge-lightgray);
 }
